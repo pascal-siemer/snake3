@@ -12,10 +12,12 @@ Wie bei der letzten Version bleiben das "in sich hineinsteuern" deaktiviert sowi
 
 Ich habe nun die Schwierigkeitsgrade easy, normal und hard hinzugefügt, welche diverse Parameter beeinflussen, wie die Spielfeldgröße, Spielgeschwindugkeit usw.
 Dazu habe ich einen Parameter eingebaut, welcher auf dem Schwierigkeitsgrad easy dafür sorgt, dass das Essen nicht mehr an den Rand positioniert wird. Das macht das Spielen einfachher, da keine riskanten Manöver am Rand des Spielfelds gebraucht werden.
+Die Schwierigkeit wird über eine HTML-Form angegeben und wird über die entsprechend angepasste URL von Snake.js erkannt. (Parameter über URL).
 
 Dazu habe ich nun ein Score-System eingebaut, welches die eigenen Leistungen anhand von Cookies pro Schwierigkeitsgrad abspeichert.
 Das bedeutet, es gibt pro Schwierigkeitsgrad einen Cookie mit dem Scoreboard. Diese laufen nach 3 Monaten ab.
-Ich habe die Anzahl der gespeicherten HighScores auf 10 pro Cookie/Schwierigkeitsgrad beschränkt. (siehe variable maxHighScores)
+Ich habe die Anzahl der gespeicherten HighScores auf 10 pro Cookie/Schwierigkeitsgrad beschränkt. (siehe variable maxHighScores).
+Dazu werden die HighScores in absteigender Reihenfolge abgespeichert. Ich habe doppelte HighScores erlaubt.
 
 
 Pascal Siemer
