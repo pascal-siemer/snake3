@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Snake von Pascal Siemer zur Bewerbung zum Anwendungsentwickler</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            canvas {
+                border: 2px solid black;
+                margin: 0 auto;
+                padding: 0;
+                display: none;
+            }
+            form {
+                display: inline;
+            }
+            #content {
+                margin: 0 auto;
+            }
+            #highScoreContent {
+                display: none;
+            }
+
+        </style>
+        <script src="./snake.js" defer></script>
+    </head>
+    <body>
+        <div id="content">
+            <h1>Snake</h3>
+            <div id="difficultyBlock">
+                Schwierigkeitsgrad: 
+                <form>
+                    <input id="difficultyList" list="difficulties" name="difficultyList">
+                    <datalist id="difficulties">
+                        <option value="Easy"></option>
+                        <option value="Normal"></option>
+                        <option value="Hard"></option>
+                    </datalist>
+                    <input type="submit" id="startButton" value="Start!">
+                </form>
+            </div>
+            <br>
+            <canvas id="canvas"></canvas>
+            <div id="output"></div>
+            <div id="highScoreContent">
+                <p id="highScoreHeadline">HighScores:</p>
+                <div id="highScore"></div>
+            </div>
+        </div>
+    </body>
+</html>
